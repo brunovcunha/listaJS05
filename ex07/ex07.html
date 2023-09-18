@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ex07.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ex 07</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Acesso ao Sistema</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="login">Login</label>
+                    </td>
+                    <td>
+                        <input type="email" id="login" required>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <label for="senha">Senha</label>
+                    </td>
+                    <td>
+                        <input type="password" id="senha" maxlength="8">
+                    </td>
+                    <td class="carac">
+                        <label for="senha">(max. 8 caracteres)</label>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <label for="confirm">Confirmar senha</label>
+                    </td>
+                    <td>
+                        <input type="password" id="confirm" maxlength="8">
+                    </td>
+                    <td class="carac">
+                        <label for="confirm">(max. 8 caracteres)</label>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td colspan="3">
+                        <input type="button" value="Entrar" onclick="validaForm()">
+                        <input type="reset" value="Limpar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
