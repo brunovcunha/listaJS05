@@ -1,8 +1,10 @@
 function pegarValor(){
     numero = document.getElementById("numero").value.trim();
-    if(texto === ''){
+    if(numero === ''){
         alert("Favor inserir um texto")
     }else{
-        resultado = document.getElementById("resultado").value=`${numero*2}`;
+        resultado = parseInt(numero) * 2;
+
+        document.getElementById("resultado").value = resultado;
     }
 }
